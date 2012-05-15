@@ -15,13 +15,35 @@ if ansser_admin == 'admin'
   puts 'Password:'
   password = gets.chomp
   if password == 'as1kl0vp'
-    code = false
-    help == false
     system 'cls'
-	puts 'ok'
+	  puts 'Comand:'
+    comands_admin = gets.chomp
+    if comands_admin == 'code_no'
+      code = false
+      puts 'ok'
+      comands_admin = gets.chomp
+    end
+    if comands_admin == 'code_yes'
+      code = true
+      puts 'ok'
+      comands_admin = gets.chomp
+    end
+    if comands_admin == 'help_no'
+      help = false
+      puts 'ok'
+      comands_admin = gets.chomp
+    end
+    if comands_admin == 'help_yes'
+      help = true
+      puts 'ok'
+      comands_admin = gets.chomp
+    end
+    if comands_admin == 'ok'
+      puts 'ok'
+    end
   else
     puts 'Error.'
-	exit
+  exit
   end
 end
 #Help-----
@@ -61,6 +83,7 @@ puts love
 puts
 puts 'Напишите команду. (если не знаете набирите "comands")'
 puts
+comand = gets.chomp
 #Help-----
 if code == true
   if help == true
@@ -89,3 +112,7 @@ if code == true
 end
 gets
 #---------  
+if comand == 'to eat'
+  eat + 5
+  puts eat
+end
