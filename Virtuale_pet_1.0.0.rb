@@ -44,7 +44,23 @@ if ansser_admin == 'admin'
 	  puts 'ok'
 	  comands_admin = gets.chomp
 	end
-    if comands_admin == 'ok'
+    if comands_admin == 'eat_0'
+	  eat = 0
+	  puts 'ok'
+	  comands_admin = gets.chomp
+	end
+	if comands_admin == 'love_0'
+	  love = 0
+	  puts 'ok'
+	  comands_admin = gets.chomp
+	end
+	if comands_admin == 'air_0'
+	  air = 0
+	  puts 'ok'
+	  comands_admin = gets.chomp
+	end
+	
+	if comands_admin == 'ok'
       puts 'ok'
     end
   else
@@ -199,7 +215,7 @@ while 1 != 2
 #Walk======================================================================================================
   if comand == 'to walk'
     eat = eat - 1
-    energy = energy - 5
+    energy = energy - 1
 	air = air + 5
 	love = love - 1
 	puts 
